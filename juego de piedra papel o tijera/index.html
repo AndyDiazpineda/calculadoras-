@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Contenedor del juego -->
+    <div class="container">
+    <h1>Juego Piedra, Papel o Tijera</h1>
+    
+    <!-- Opciones del jugador -->
+    <div class="choices">
+    <div class="choice" id="piedra" onclick="elegirOpcion('piedra')">✊ Piedra</div>
+    <div class="choice" id="papel" onclick="elegirOpcion('papel')">✋ Papel</div>
+    <div class="choice" id="tijera" onclick="elegirOpcion('tijera')">✌ Tijera</div>
+    </div>
+
+    <!-- Resultado de la partida -->
+    <div class="result" id="resultado"></div>
+
+    <!-- Botón para reiniciar el juego -->
+    <button class="reset-button" onclick="reiniciarJuego()">Reiniciar Juego</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
